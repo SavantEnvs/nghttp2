@@ -1,0 +1,6 @@
+project: savantenvs/nghttp2
+target: nghttp2_fuzzer_fdp
+cmds:
+  - cmd: /mayhem/nghttp2_fuzzer_fdp
+    libfuzzer: true
+    timeout: 5
