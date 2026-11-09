@@ -1,0 +1,9 @@
+project: savantenvs/nghttp2
+target: nghttp2_fuzzer_base64-mined-494a291
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/nghttp2_fuzzer_base64-mined-494a291/testsuite
+cmds:
+  - cmd: /mayhem/nghttp2_fuzzer_base64
+    libfuzzer: true
+    timeout: 5
